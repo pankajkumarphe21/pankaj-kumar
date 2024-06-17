@@ -41,7 +41,7 @@ const Home = () => {
         <div className="pl-[10%] pt-[5%]">
           <img className="h-[400px]" src="/profile.jpg" alt="" />
         </div>
-        <div className="fixed bg-blue-500 bottom-6 right-10 h-[50px] w-[160px] flex justify-center items-center rounded-md border-2 border-white">
+        <div className="fixed z-10 bg-blue-500 bottom-6 right-10 h-[50px] w-[160px] flex justify-center items-center rounded-md border-2 border-white">
           Contact Me
         </div>
       </div>
