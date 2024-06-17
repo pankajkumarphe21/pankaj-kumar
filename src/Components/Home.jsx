@@ -1,9 +1,87 @@
-import React from 'react'
+import React from "react";
+import { IoMdCall } from "react-icons/io";
+import { MdCloudDownload } from "react-icons/md";
+import { HiOutlineDesktopComputer } from "react-icons/hi";
+import PreviewSkills from '../parts/PreviewSkills'
+import Highlights from '../parts/Highlights'
 
 const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <div className="flex flex-col top-[60px]">
+      <div className="h-[400px] flex">
+        <div className="w-[47%] py-[11%] pl-[12%] flex flex-col">
+          <h1 className="text-blue-500 font-medium text-[2.5rem] mb-[1px]">
+            Hello World!
+          </h1>
+          <p className="text-[2.4rem] font-medium">I am Pankaj Kumar</p>
+          <p className="text-[1.9rem] font-medium text-blue-500">
+            Full Stack Developer, Data Analyst
+          </p>
+          <p className="text-[1.3rem] pr-[12%]">
+            Hi there, I am Pankaj, a final year student at IIT BHU striving to
+            make my dreams into reality!
+          </p>
+          <div className="flex mt-[50px]">
+            <div className="h-[86px] w-[96px] hover:scale-105 border-2 rounded-lg flex flex-col items-center">
+              <IoMdCall className="mt-[16px] text-[24px]" />
+              <p className="mt-[9px] text-sm">Fix A Call</p>
+            </div>
+            <div className="h-[86px] hover:scale-105 w-[96px] border-2 ml-[20px] rounded-lg flex flex-col items-center">
+              <MdCloudDownload className="mt-[10px] text-[24px]" />
+              <p className="mt-[5px] text-sm">Download</p>
+              <p className="text-sm">Resume</p>
+            </div>
+            <div className="h-[86px] w-[96px] hover:scale-105 border-2 ml-[20px] rounded-lg flex flex-col items-center">
+              <HiOutlineDesktopComputer className="mt-[10px] text-[24px]" />
+              <p className="mt-[5px] text-sm">Go to</p>
+              <p className="text-sm">Projects</p>
+            </div>
+          </div>
+        </div>
+        <div className="pl-[10%] pt-[5%]">
+          <img className="h-[400px]" src="/profile.jpg" alt="" />
+        </div>
+        <div className="fixed bg-blue-500 bottom-6 right-10 h-[50px] w-[160px] flex justify-center items-center rounded-md border-2 border-white">
+          Contact Me
+        </div>
+      </div>
+      <div className="mt-[200px] w-[100%] mb-[40px] flex justify-center items-center ">
+        <div className="h-[200px] w-[80%] flex bg-[#161B22] rounded-[0.6rem] overflow-hidden">
+          <div className="bg-green-600 h-[200px] w-[17px]"></div>
+          <div className="flex flex-col mt-[14px] ml-[14px]">
+            <ul className="list-disc ml-[20px]">
+              <li>
+                <span className="font-bold">Education</span>: B.Tech, IIT (BHU),
+                graduating in 2025, CGPA-7.33.
+              </li>
+              <li>
+                <span className="font-bold">Skills</span>: C, C++, JavaScript,
+                HTML, CSS, NodeJS, Express.JS, MongoDB, ReactJS, Git, more
+              </li>
+              <li>
+                <span className="font-bold">Projects</span>: See here
+              </li>
+              <li>
+                <span className="font-bold">Interests</span>: Full Stack
+                Development, Data Analysis, Android Development.
+              </li>
+              <li>
+                <span className="font-bold">Readiness</span>: Eager to apply
+                skills and open to collaborations.
+              </li>
+              <li>
+                <span className="font-bold">Professional Experience</span>:
+                Currently Not Working, previously at Spirit.
+              </li>
+              <li>Learn more about me by clicking here</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <PreviewSkills/>
+      <Highlights/>
+    </div>
+  );
+};
 
-export default Home
+export default Home;
