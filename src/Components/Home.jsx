@@ -10,14 +10,14 @@ const Home = () => {
     <div className="flex flex-col top-[60px]">
       <div className="h-[400px] flex">
         <div className="w-[47%] py-[11%] pl-[12%] flex flex-col">
-          <h1 className="text-blue-500 font-medium text-[2.5rem] mb-[1px]">
+          <h1 className="text-blue-500 font-medium max-sm:text-[1.5rem] text-[2.5rem] mb-[1px]">
             Hello World!
           </h1>
-          <p className="text-[2.4rem] font-medium">I am Pankaj Kumar</p>
-          <p className="text-[1.9rem] font-medium text-blue-500">
+          <p className="text-[2.4rem] max-sm:text-[1.4rem] font-medium">I am Pankaj Kumar</p>
+          <p className="text-[1.9rem] max-sm:text-[1.2rem] font-medium text-blue-500">
             Full Stack Developer, Data Analyst
           </p>
-          <p className="text-[1.3rem] pr-[12%]">
+          <p className="text-[1.3rem] max-sm:text-[0.9rem] pr-[12%]">
             Hi there, I am Pankaj, a final year student at IIT BHU striving to
             make my dreams into reality!
           </p>
@@ -45,10 +45,10 @@ const Home = () => {
           Contact Me
         </div>
       </div>
-      <div className="mt-[200px] w-[100%] mb-[40px] flex justify-center items-center ">
-        <div className="h-[200px] w-[80%] flex bg-[#161B22] rounded-[0.6rem] overflow-hidden">
-          <div className="bg-green-600 h-[200px] w-[17px]"></div>
-          <div className="flex flex-col mt-[14px] ml-[14px]">
+      <div className="mt-[200px] max-sm:mt-[200px] w-[100%] mb-[40px] flex justify-center items-center ">
+        <div className="h-[200px] w-[80%] max-md:h-[320px] max-sm:h-[400px] flex bg-[#161B22] rounded-[0.6rem] overflow-hidden">
+          <div className="bg-green-600 h-[200px] max-md:h-[320px] max-sm:h-[400px] w-[17px]"></div>
+          <div className="flex flex-col ml-[14px] justify-center">
             <ul className="list-disc ml-[20px]">
               <li>
                 <span className="font-bold">Education</span>: B.Tech, IIT (BHU),
