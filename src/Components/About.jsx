@@ -23,10 +23,10 @@ const About = () => {
         <p className='ml-[43px] flex'><p className='text-yellow-500'>Last Company </p>: Spirit </p>
         </div>
         <div className='flex gap-5 text-[30px] mt-[50px] mb-[60px] justify-center items-center'>
-        <div className='border-2 p-3 hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-300 rounded-[50%]'><a href=""><FaTwitter/></a></div>
-        <div className='border-2 p-3 hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-800 rounded-[50%]'><a href=""><FaLinkedin/></a></div>
-        <div className='border-2 p-3 hover:bg-gradient-to-r hover:from-red-500 hover:to-red-400 rounded-[50%]'><a href=""><FaGithub/></a></div>
-        <div className='border-2 p-3 hover:bg-gradient-to-r hover:from-red-600 hover:to-yellow-500 hover:via-red-500 rounded-[50%]'><a href=""><BsInstagram/></a></div>
+        <div className='border-2 p-3 hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-300 rounded-[50%]'><a target='_blank' href="https://x.com/pankaj3k3"><FaTwitter/></a></div>
+        <div className='border-2 p-3 hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-800 rounded-[50%]'><a target='_blank' href="https://www.linkedin.com/in/pankaj-kumar-81bb84229/"><FaLinkedin/></a></div>
+        <div className='border-2 p-3 hover:bg-gradient-to-r hover:from-red-500 hover:to-red-400 rounded-[50%]'><a target='_blank' href="https://github.com/pankajkumarphe21"><FaGithub/></a></div>
+        <div className='border-2 p-3 hover:bg-gradient-to-r hover:from-red-600 hover:to-yellow-500 hover:via-red-500 rounded-[50%]'><a target='_blank' href="https://www.instagram.com/pankaj_2002_21/"><BsInstagram/></a></div>
         </div>
       </div>
     </div>

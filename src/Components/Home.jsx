@@ -28,8 +28,8 @@ const Home = () => {
             </div>
             <div className="h-[86px] hover:scale-105 w-[96px] border-2 ml-[20px] rounded-lg flex flex-col items-center">
               <MdCloudDownload className="mt-[10px] text-[24px]" />
-              <p className="mt-[5px] text-sm">Download</p>
-              <p className="text-sm">Resume</p>
+              <a target="_blank" href="https://drive.google.com/file/d/18LQABisXSRmE5wDC_JqxK6e9eo28btqU/view?usp=drive_link" className="mt-[5px] text-sm">Download</a>
+              <a target="_blank" href="https://drive.google.com/file/d/18LQABisXSRmE5wDC_JqxK6e9eo28btqU/view?usp=drive_link" className="text-sm">Resume</a>
             </div>
             <div className="h-[86px] w-[96px] hover:scale-105 border-2 ml-[20px] rounded-lg flex flex-col items-center">
               <HiOutlineDesktopComputer className="mt-[10px] text-[24px]" />
@@ -38,7 +38,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="pl-[10%] pt-[5%] max-sm:pl-[0%] flex justify-center">
+        <div className="pl-[10%] pt-[5%] max-sm:pl-[0%] max-sm:flex max-sm:justify-center">
           <img className="h-[400px] max-sm:h-[250px]" src="/profile.jpg" alt="" />
         </div>
         <div className="fixed z-10 bg-blue-500 bottom-6 right-10 h-[50px] w-[160px] flex justify-center items-center rounded-md border-2 border-white">
