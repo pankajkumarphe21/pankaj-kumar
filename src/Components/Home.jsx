@@ -29,8 +29,8 @@ const Home = () => {
             </div>
             <div className="h-[86px] hover:scale-105 w-[96px] border-2 ml-[20px] rounded-lg flex flex-col items-center">
               <MdCloudDownload className="mt-[10px] text-[24px]" />
-              <a target="_blank" href="https://drive.google.com/file/d/18LQABisXSRmE5wDC_JqxK6e9eo28btqU/view?usp=drive_link" className="mt-[5px] text-sm">Download</a>
-              <a target="_blank" href="https://drive.google.com/file/d/18LQABisXSRmE5wDC_JqxK6e9eo28btqU/view?usp=drive_link" className="text-sm">Resume</a>
+              <a target="_blank" href="https://drive.google.com/file/d/18ienx3WJmQKw5E1SobzMeqAaBkKR5VNX/view?usp=sharing" className="mt-[5px] text-sm">Download</a>
+              <a target="_blank" href="https://drive.google.com/file/d/18ienx3WJmQKw5E1SobzMeqAaBkKR5VNX/view?usp=sharing" className="text-sm">Resume</a>
             </div>
             <div className="h-[86px] w-[96px] hover:scale-105 border-2 ml-[20px] rounded-lg flex flex-col items-center">
               <HiOutlineDesktopComputer className="mt-[10px] text-[24px]" />
