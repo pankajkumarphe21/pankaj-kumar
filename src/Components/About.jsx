@@ -18,9 +18,9 @@ const About = () => {
         <p className='mt-[20px] flex items-center tracking-tight'><span className='mr-[14px] text-red-500 text-2xl'><BsFillRocketTakeoffFill/></span>Beyond the classroom, I've dived into various projects that have been dynamic learning experiences, where my hard work has blended with a genuine love for technology. These endeavors have not only refined my problem-solving skills but also provided me with insights into the multifaceted world of technology. I'm driven by a fervor for Full Stack Web Development, Backend Development, and the intriguing field of Data analysis.</p>
         <p className='mt-[20px] flex items-center tracking-tight'><span className='mr-[14px] text-red-500 text-2xl'><BsFillRocketTakeoffFill/></span>I am eager to apply my skills in practical scenarios and always open to engaging discussions, exploring collaborations, or sharing insights into the ever-evolving tech landscape. I am enthusiastic about embracing new opportunities and contributing to innovative endeavors!</p>
         <div className='flex max-sm:flex-col mt-[50px] text-2xl'>
-        <p className='ml-[103px] max-sm:ml-[43px] flex'><p className='text-yellow-500'>Based in </p>: India </p>
-        <p className='ml-[43px] flex'><p className='text-yellow-500'>Current Company </p>: NA </p>
-        <p className='ml-[43px] flex'><p className='text-yellow-500'>Last Company </p>: Spirit </p>
+        <div className='ml-[103px] max-sm:ml-[43px] flex'><p className='text-yellow-500'>Based in </p>: India </div>
+        <div className='ml-[43px] flex'><p className='text-yellow-500'>Current Company </p>: NA </div>
+        <div className='ml-[43px] flex'><p className='text-yellow-500'>Last Company </p>: Spirit </div>
         </div>
         <div className='flex gap-5 text-[30px] mt-[50px] mb-[60px] justify-center items-center'>
         <div className='border-2 p-3 hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-300 rounded-[50%]'><a target='_blank' href="https://x.com/pankaj3k3"><FaTwitter/></a></div>

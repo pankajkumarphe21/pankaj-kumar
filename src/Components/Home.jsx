@@ -4,6 +4,7 @@ import { MdCloudDownload } from "react-icons/md";
 import { HiOutlineDesktopComputer } from "react-icons/hi";
 import PreviewSkills from '../parts/PreviewSkills'
 import Highlights from '../parts/Highlights'
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -33,8 +34,8 @@ const Home = () => {
             </div>
             <div className="h-[86px] w-[96px] hover:scale-105 border-2 ml-[20px] rounded-lg flex flex-col items-center">
               <HiOutlineDesktopComputer className="mt-[10px] text-[24px]" />
-              <p className="mt-[5px] text-sm">Go to</p>
-              <p className="text-sm">Projects</p>
+              <Link className="mt-[5px] text-sm" to={'/projects'}>Go to</Link>
+              <Link className="text-sm" to={'/projects'}>Projects</Link>
             </div>
           </div>
         </div>
