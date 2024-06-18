@@ -25,7 +25,7 @@ const Home = () => {
           <div className="flex mt-[50px]">
             <div className="h-[86px] w-[96px] hover:scale-105 border-2 rounded-lg flex flex-col items-center">
               <IoMdCall className="mt-[16px] text-[24px]" />
-              <p className="mt-[9px] text-sm">Fix A Call</p>
+              <a href="tel:+917751016519" className="mt-[9px] text-sm">Fix A Call</a>
             </div>
             <div className="h-[86px] hover:scale-105 w-[96px] border-2 ml-[20px] rounded-lg flex flex-col items-center">
               <MdCloudDownload className="mt-[10px] text-[24px]" />

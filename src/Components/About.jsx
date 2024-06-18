@@ -26,7 +26,7 @@ const About = () => {
         <div className='border-2 p-3 hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-300 rounded-[50%]'><a target='_blank' href="https://x.com/pankaj3k3"><FaTwitter/></a></div>
         <div className='border-2 p-3 hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-800 rounded-[50%]'><a target='_blank' href="https://www.linkedin.com/in/pankaj-kumar-81bb84229/"><FaLinkedin/></a></div>
         <div className='border-2 p-3 hover:bg-gradient-to-r hover:from-red-500 hover:to-red-400 rounded-[50%]'><a target='_blank' href="https://github.com/pankajkumarphe21"><FaGithub/></a></div>
-        <div className='border-2 p-3 hover:bg-gradient-to-r hover:from-red-600 hover:to-yellow-500 hover:via-red-500 rounded-[50%]'><a target='_blank' href="https://www.instagram.com/pankaj_2002_21/"><BsInstagram/></a></div>
+        <div className='border-2 p-3 hover:bg-gradient-to-r hover:from-red-600 hover:to-yellow-500 hover:via-red-500 rounded-[50%]'><a target='_blank' href="https://www.instagram.com/pankaj_2002_22/"><BsInstagram/></a></div>
         </div>
       </div>
     </div>
