@@ -8,8 +8,8 @@ import Highlights from '../parts/Highlights'
 const Home = () => {
   return (
     <div className="flex flex-col top-[60px]">
-      <div className="h-[400px] flex">
-        <div className="w-[47%] py-[11%] pl-[12%] flex flex-col">
+      <div className="h-[400px] flex max-sm:flex-col">
+        <div className="w-[47%] max-sm:w-[90%] py-[11%] pl-[12%] max-sm:py-[22%] flex flex-col">
           <h1 className="text-blue-500 font-medium max-sm:text-[1.5rem] text-[2.5rem] mb-[1px]">
             Hello World!
           </h1>
@@ -38,17 +38,17 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="pl-[10%] pt-[5%]">
-          <img className="h-[400px]" src="/profile.jpg" alt="" />
+        <div className="pl-[10%] pt-[5%] max-sm:pl-[0%] flex justify-center">
+          <img className="h-[400px] max-sm:h-[250px]" src="/profile.jpg" alt="" />
         </div>
         <div className="fixed z-10 bg-blue-500 bottom-6 right-10 h-[50px] w-[160px] flex justify-center items-center rounded-md border-2 border-white">
           Contact Me
         </div>
       </div>
-      <div className="mt-[200px] max-sm:mt-[200px] w-[100%] mb-[40px] flex justify-center items-center ">
+      <div className="mt-[200px] max-sm:mt-[400px] w-[100%] mb-[40px] flex justify-center items-center ">
         <div className="h-[200px] w-[80%] max-md:h-[320px] max-sm:h-[400px] flex bg-[#161B22] rounded-[0.6rem] overflow-hidden">
           <div className="bg-green-600 h-[200px] max-md:h-[320px] max-sm:h-[400px] w-[17px]"></div>
-          <div className="flex flex-col ml-[14px] justify-center">
+          <div className="flex flex-col ml-[14px] max-sm:mr-[14px] justify-center">
             <ul className="list-disc ml-[20px]">
               <li>
                 <span className="font-bold">Education</span>: B.Tech, IIT (BHU),

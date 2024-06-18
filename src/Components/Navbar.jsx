@@ -8,8 +8,8 @@ const Navbar = () => {
         <div className="h-[60px] overflow-hidden ml-[3%] flex justify-center items-center">
             <img className="rounded-[50%] border-red-500 border-2" src="/profile.jpg" height={50} width={50} alt="" />
         </div>
-        <h1 className="text-lg text-orange-400">Welcome</h1>
-      <div className="flex gap-10 ml-[7%]">
+        <h1 className="text-lg text-orange-400 max-sm:mr-[200px]">Welcome</h1>
+      <div className="flex gap-10 ml-[7%] max-sm:hidden">
         <Link to="/">Home</Link>
         <Link to="/about">About Me</Link>
         <Link to="/education">Education</Link>
