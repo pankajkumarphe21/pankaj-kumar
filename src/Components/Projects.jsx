@@ -1,44 +1,117 @@
-import React,{useState} from 'react'
+import React, { useState } from "react";
+import { FaGithub } from "react-icons/fa6";
+import { TbWorld } from "react-icons/tb";
+import { FaExpand } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import {updateIndex} from './../features/project/projectSlice'
+
+export const projects = [
+  {
+    heading: "Spirit (IIT BHU)",
+    image: "/w1.png",
+    github: "https://github.com/itsgeekhokage/spirit-24",
+    live:"https://www.spiritiitbhu.com/",
+    tools:['ReactJs','HTML','CSS','Javascript'],
+    img:'/spirit.png',
+    category:'FrontEnd'
+  },
+  {
+    heading: "Genome Diagnosis",
+    image: "/w2.png",
+    github: "https://github.com/Tonystark121/GenomeDiagnosis",
+    live:"https://genome-diagnosis.vercel.app/",
+    tools:['ReactJs','HTML','CSS','Javascript'],
+    img:"/Genome.png",
+    category:'FrontEnd'
+  },
+  {
+    heading: "Notes App",
+    image: "/w3.png",
+    github: "https://github.com/pankajkumarphe21/trial",
+    live:"https://trial-green.vercel.app/",
+    tools:['NodeJs','ExpressJs','Mongo DB','Mongoose','EJS','JsonWebToken','Tailwind CSS'],
+    img:"/note.png",
+    category:'Backend'
+  },
+];
 
 const Projects = () => {
-  const [projects,setProjects]=useState([
-    {
-      heading:'Spirit IIT BHU',
-      image:'/w1.png'
-    },
-    {
-      heading:'Genome Diagnosis',
-      image:'/w2.png'
-    },
-    {
-      heading:'Notes App',
-      image:'/w3.png'
-    }
-  ])
-  const Card=(val,i)=>{
+  const dispatch=useDispatch();
+  const Card = ({val}) => {
     return (
-      <div key={i} className='flex flex-col h-[231px] w-[376px] justify-between'>
-          <img className='animate' src={val.val.image} alt="" />
-          <p className='flex justify-center'>{val.val.heading}</p>
+      <div
+        className="project flex flex-col h-[235px] overflow-hidden w-[380px] justify-between border-white rounded-md border-2"
+      >
+        <div className="absolute h-[195px] w-[376px] rounded-t-md overflow-hidden">
+          <img
+            className="h-[110px] opacity-45 w-[122px]"
+            src={val.val.image}
+            alt=""
+          />
         </div>
-    )
-  }
+        <div className="absolute h-[231px] w-[376px]">
+          <div className="flex h-[231px] w-[376px] flex-col justify-between">
+            <div className="flex">
+              <div className="flex flex-col ml-[40%] mt-[10%]">
+              <a target="_blank"
+                  href={val.val.github}><FaGithub
+                  target="_blank"
+                  href={val.val.github}
+                  className="text-4xl text-white bg-zinc-800"
+                /></a>
+                <a target="_blank" className="" href={val.val.github}>
+                  Code
+                </a>
+              </div>
+              <div className="flex flex-col ml-[40px] mt-[9.43%] items-center">
+              <a target="_blank"
+                  href={val.val.live}><TbWorld
+                  target="_blank"
+                  href={val.val.live}
+                  className="text-[2.4rem] text-white bg-zinc-800"
+                /></a>
+                <a target="_blank" className="" href={val.val.live}>
+                  Live
+                </a>
+              </div>
+              <div className="flex flex-col ml-[40px] mt-[10%]">
+                <Link onClick={()=>{dispatch(updateIndex(val.i));
+                }} to={`/singleproject`}><FaExpand
+                  
+                  className="text-4xl text-white bg-zinc-800"
+                /></Link>
+                <Link onClick={()=>{dispatch(updateIndex(val.i));
+                }} to={`/singleproject`}>More</Link>
+              </div>
+            </div>
+            <div className="flex flex-wrap gap-[13px] ml-[2%]">
+              {
+                val.val.tools.map((val,i)=>(
+                  <p className="text-sm" key={i}>{val}</p>
+                ))
+              }
+            </div>
+            <div className="bg-zinc-900 border-t-[1px] border-white h-[36px] flex justify-center items-center rounded-b-md">
+              <p className="text-lg font-semibold">{val.val.heading}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  };
   return (
-    <div className='w-[100%] flex justify-center items-center mb-[100px]'>
-    <div className='mt-[60px] w-[80%] flex flex-col justify-center items-center'>
-      <h1 className='text-4xl my-[20px] text-orange-400'>Project Area</h1>
-      <div className='flex flex-wrap gap-[160px] justify-center'>
-        {
-          projects.map((value,i)=>{
-            return (
-              <Card key={i} val={value}/>
-            )
-          })
-        }
+    <div className="w-[100%] flex justify-center items-center mb-[100px]">
+      <div className="mt-[60px] w-[80%] flex flex-col justify-center items-center">
+        <h1 className="text-4xl my-[20px] text-orange-400">Project Area</h1>
+        <div className="flex flex-wrap gap-[60px] justify-center">
+          {projects.map((val, i) => {
+            return <Card key={i} val={{val:val,i:i}} />;
+          })}
+        </div>
       </div>
     </div>
-    </div>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;
