@@ -8,8 +8,13 @@ const SingleProject = ({index}) => {
   const project=projects[index]
   return (
     <div className="flex justify-center h-[590px] mt-[90px]">
-      <div className="w-[80%] flex shadow-xl h-[540px]">
-      <div className="mt-[20px] w-[48.2%] flex flex-col p-4">
+      <div className="w-[80%] max-sm:flex-col flex shadow-xl h-[540px]">
+          <div className="flex">
+          <Link to='/projects'>
+            <img className="sm:hidden bg-white rounded-[50%] h-[20px]" src="/icons8-delete.svg" alt="Hi"/>
+          </Link>
+          </div>
+      <div className="mt-[20px] w-[48.2%] max-sm:w-[100%] flex flex-col p-4">
         <img className="h-[240px] w-[430px] rounded-lg" src={`${project.image}`} alt=""/>
         <div className="mt-[40px] ml-[20px] ">
         <p className="text-3xl font-semibold">{project.heading}</p>
@@ -27,10 +32,10 @@ const SingleProject = ({index}) => {
         </div>
         </div>
       </div>
-      <div className="w-[49%] flex flex-col">
+      <div className="w-[49%] max-sm:w-[100%] flex flex-col">
       <div className="flex justify-end mt-[5px]"><div className="rounded-[50%] flex justify-center items-center">
           <Link to='/projects'>
-          <img className="bg-white rounded-[50%] h-[20px]" src="/icons8-delete.svg" alt="Hi"/>
+          <img className="bg-white rounded-[50%] h-[20px] max-sm:hidden" src="/icons8-delete.svg" alt="Hi"/>
           </Link>
         </div></div>
         <div className="flex flex-col mt-[10px]">
@@ -44,9 +49,9 @@ const SingleProject = ({index}) => {
             ))
           }
         </div>
-        <div className="flex justify-between mt-[20px] ml-[20px]  ">
-        <a href={`${project.live}`} target="_blank" className="border-2 text-xl flex gap-4 border-orange-500 py-3 px-6"><TbWorld className="text-3xl"/>Live</a>
-          <a href={`${project.github}`} target="_blank" className="border-2 text-xl flex gap-4 border-orange-500 py-3 px-6"><FaGithub className="text-3xl"/>View Code</a>
+        <div className="flex max-sm:flex-col justify-between mt-[20px] ml-[20px]  ">
+        <a href={`${project.live}`} target="_blank" className="border-2 text-xl flex gap-4 border-orange-500 py-3 px-6 max-sm:mb-[20px]"><TbWorld className="text-3xl"/>Live</a>
+          <a href={`${project.github}`} target="_blank" className="border-2 text-xl flex gap-4 border-orange-500 py-3 px-6 max-sm:mb-[20px]"><FaGithub className="text-3xl"/>View Code</a>
         </div>
         </div>
       </div>
