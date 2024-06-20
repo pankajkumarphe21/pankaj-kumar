@@ -10,16 +10,14 @@ const Navbar = () => {
     const nav=document.getElementById("navbar");
     if(isOpen){
       nav.classList.add('max-sm:flex')
-      document.getElementById('image')?.classList.add('hidden')
     }
     else{
       nav?.classList.remove('max-sm:flex')
-      document.getElementById('image')?.classList.remove('hidden')
     }
   return (
-    <div className="fixed top-0 w-[100%] shadow-xl z-10">
+    <div className="fixed top-0 w-[100%] shadow-xl h-[60px] z-10">
       <div className="bg-zinc-800 font-bold h-[60px] text-xl flex max-sm:gap-[20px] gap-[1%] items-center">
-        <div className="h-[60px] overflow-hidden ml-[3%] flex justify-center items-center">
+        <div className="h-[60px] overflow-hidden ml-[9%] flex justify-center items-center">
             <img id="image" className="rounded-[50%] border-red-500 border-2" src="/profile.jpg" height={50} width={50} alt="" />
         </div>
         <h1 className="text-lg text-orange-400">Welcome</h1>
@@ -32,8 +30,14 @@ const Navbar = () => {
         <Link to="/experience">Experience</Link>
         <Link to="/contact">Contact Me</Link>
       </div>
-      <div className="sm:hidden text-xl menu-btn flex justify-end w-[80%] mr-[40px]" id="menu-btn" onClick={toggleNavbar}>☰</div>
-      <div className="hidden bg-zinc-900 z-20 max-sm:flex-col gap-[1px] mt-[170px] text-xl justify-center items-center w-[100%] mr-[40px] " id="navbar">
+      <div className="sm:hidden text-xl menu-btn flex justify-end w-[80%] mr-[40px]" id="menu-btn" onClick={toggleNavbar}>
+        {
+          !isOpen ? '☰' : 'X'
+        }
+      </div>
+      
+    </div>
+    <div className="hidden bg-zinc-900 z-20 max-sm:flex-col gap-[5px] pb-[11px] pt-[9px] text-xl justify-center items-center w-[40%] ml-[56%]" id="navbar">
       <Link className="text-blue-500" to="/">Home</Link>
         <Link className="text-blue-500" to="/about">About Me</Link>
         <Link className="text-blue-500" to="/education">Education</Link>
@@ -42,7 +46,6 @@ const Navbar = () => {
         <Link className="text-blue-500" to="/experience">Experience</Link>
         <Link className="text-blue-500" to="/contact">Contact</Link>
       </div>
-    </div>
     </div>
   );
 };

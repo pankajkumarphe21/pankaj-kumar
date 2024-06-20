@@ -42,9 +42,9 @@ const Home = () => {
         <div className="pl-[10%] pt-[5%] max-sm:pl-[0%] max-sm:flex max-sm:justify-center">
           <img className="h-[400px] max-sm:h-[250px]" src="/profile.jpg" alt="" />
         </div>
-        <div className="fixed z-10 bg-blue-500 bottom-6 right-10 h-[50px] w-[160px] flex justify-center items-center rounded-md border-2 border-white">
+        <Link to='/contact' className="fixed z-10 bg-blue-500 bottom-6 right-10 h-[50px] w-[160px] flex justify-center items-center rounded-md border-2 border-white">
           Contact Me
-        </div>
+        </Link>
       </div>
       <div className="mt-[200px] max-sm:mt-[400px] w-[100%] mb-[40px] flex justify-center items-center ">
         <div className="h-[200px] w-[80%] max-md:h-[320px] max-sm:h-[400px] flex bg-[#161B22] rounded-[0.6rem] overflow-hidden">
