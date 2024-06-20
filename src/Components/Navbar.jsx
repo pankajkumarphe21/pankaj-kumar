@@ -11,7 +11,6 @@ const Navbar = () => {
     if(isOpen){
       nav.classList.add('max-sm:flex')
       document.getElementById('image')?.classList.add('hidden')
-
     }
     else{
       nav?.classList.remove('max-sm:flex')
@@ -34,7 +33,7 @@ const Navbar = () => {
         <Link to="/contact">Contact Me</Link>
       </div>
       <div className="sm:hidden text-xl menu-btn flex justify-end w-[80%] mr-[40px]" id="menu-btn" onClick={toggleNavbar}>☰</div>
-      <div className="hidden bg-zinc-900 z-20 max-sm:flex-col gap-[1px] mt-[170px] text-xl justify-end w-[100%] mr-[40px] " id="navbar">
+      <div className="hidden bg-zinc-900 z-20 max-sm:flex-col gap-[1px] mt-[170px] text-xl justify-center items-center w-[100%] mr-[40px] " id="navbar">
       <Link className="text-blue-500" to="/">Home</Link>
         <Link className="text-blue-500" to="/about">About Me</Link>
         <Link className="text-blue-500" to="/education">Education</Link>
