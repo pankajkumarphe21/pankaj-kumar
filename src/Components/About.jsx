@@ -9,7 +9,7 @@ const About = () => {
   return (
     <div className='mt-[60px] flex w-[100%]'>
       <div className='w-[24%] max-sm:hidden'>
-
+        <img src="/profile.jpg" className='h-[300px] w-[270px] ml-[20px] mt-[100px]' alt="" />
       </div>
       <div className='mt-[30px] w-[70%] max-sm:w-[90%] max-sm:ml-[5%] flex-col items-center justify-center'>
         <h1 className='text-4xl font-semibold flex justify-center'>About Me</h1>

@@ -13,7 +13,6 @@ export const projects = [
     github: "https://github.com/itsgeekhokage/spirit-24",
     live:"https://www.spiritiitbhu.com/",
     tools:['ReactJs','HTML','CSS','Javascript'],
-    img:'/spirit.png',
     category:'FrontEnd',
     description:['Collaborated within a team of four to conceptualize, design, and develop the Spirit-24 website.',
       'A comprehensive platform providing detailed event information and streamlined event registration processes.'
@@ -25,7 +24,6 @@ export const projects = [
     github: "https://github.com/Tonystark121/GenomeDiagnosis",
     live:"https://genome-diagnosis.vercel.app/",
     tools:['ReactJs','HTML','CSS','Javascript'],
-    img:"/Genome.png",
     category:'FrontEnd',
     description:[' Genome Diagnosis is a platform where genomic technologies are made more accessible and affordable.',
       'I added many components like footer, about section, teams component.'
@@ -37,7 +35,6 @@ export const projects = [
     github: "https://github.com/pankajkumarphe21/trial",
     live:"https://trial-green.vercel.app/",
     tools:['NodeJs','ExpressJs','Mongo DB','Mongoose','EJS','JsonWebToken','Tailwind CSS'],
-    img:"/note.png",
     category:'Backend',
     description:['Made a Note Making website from scratch.',
       'Notes will be saved even after logout because notes will be saved in the Database.'

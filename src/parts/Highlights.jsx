@@ -8,11 +8,11 @@ import { updateIndex } from '../features/project/projectSlice'
 const Card=({projects,index})=>{
   const dispatch=useDispatch()
   return (
-    <div className={`bg-[url("${projects.img}")] rounded-sm relative bg-no-repeat h-[246px] w-[376px]`}>
-    <div className='absolute top-0 bg-zinc-800 opacity-80 h-[246px] w-[376px] '>
-      
+    <div className='rounded-sm relative bg-no-repeat h-[246px] w-[376px]'>
+    <div className='absolute -z-10 top-0 bg-zinc-800 opacity-40 h-[246px] w-[376px] '>
+      <img src={`${projects.image}`} alt="" />
     </div>
-    <div className='absolute font-extrabold top-0 h-[246px] w-[376px] flex flex-col justify-center items-center'>
+    <div className='absolute font-extrabold top-0 h-[226px] w-[372px] flex flex-col justify-center items-center'>
     <p>{projects.heading}</p>
     <Link to='/singleProject' onClick={()=>{dispatch(updateIndex(index))}} className='mt-[6px] h-[26px] w-[160px] rounded-lg font-light flex justify-center items-center border-[1px]'>Click to see Details</Link>
     </div>
