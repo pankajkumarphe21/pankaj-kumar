@@ -22,27 +22,27 @@ const Contact = () => {
         <div className='flex justify-center gap-[40px]'>
         <a href="tel:+917751016519" className="h-[86px] w-[96px] text-white hover:scale-105 border-2 rounded-lg flex flex-col items-center">
               <IoMdCall className="mt-[16px] text-[24px]" />
-              <a href="tel:+917751016519" className="mt-[9px] text-sm">Fix A Call</a>
+              <span className="mt-[9px] text-sm">Fix A Call</span>
             </a>
             <a href="https://github.com/pankajkumarphe21" target='_blank' className="h-[86px] w-[96px] text-white hover:scale-105 border-2 rounded-lg flex flex-col items-center">
               <FaGithub className="mt-[16px] text-[24px]" />
-              <a href="https://github.com/pankajkumarphe21" target='_blank' className="mt-[9px] text-sm">Github</a>
+              <span className="mt-[9px] text-sm">Github</span>
             </a>
         </div>
         <div className='flex justify-center gap-[40px]'>
             <a href="https://www.linkedin.com/in/pankaj-kumar-81bb84229/" target='_blank' className="h-[86px] w-[96px] text-white hover:scale-105 border-2 rounded-lg flex flex-col items-center">
               <FaLinkedin className="mt-[16px] text-[24px]" />
-              <a href="https://www.linkedin.com/in/pankaj-kumar-81bb84229/" target='_blank' className="mt-[9px] text-sm">LinkedIn</a>
+              <span className="mt-[9px] text-sm">LinkedIn</span>
             </a>
             <a href="https://www.instagram.com/pankaj_2002_22/" target='_blank' className="h-[86px] w-[96px] text-white hover:scale-105 border-2 rounded-lg flex flex-col items-center">
               <BsInstagram className="mt-[16px] text-[24px]" />
-              <a target='_blank' className="mt-[9px] text-sm">Instagram</a>
+              <span className="mt-[9px] text-sm">Instagram</span>
             </a>
             </div>
             <div className='flex justify-center mb-[30px]'>
             <a href="https://x.com/pankaj3k3" target='_blank' className="h-[86px] w-[96px] text-white hover:scale-105 border-2 rounded-lg flex flex-col items-center">
               <FaTwitter className="mt-[16px] text-[24px]" />
-              <a target='_blank' className="mt-[9px] text-sm">(X)</a>
+              <span className="mt-[9px] text-sm">(X)</span>
             </a>
             </div>
         </div>

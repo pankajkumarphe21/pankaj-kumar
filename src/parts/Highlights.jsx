@@ -1,15 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {projects} from './../Components/Projects'
+import { Link } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
+import { updateIndex } from '../features/project/projectSlice'
 
-const Card=({projects})=>{
+
+const Card=({projects,index})=>{
+  const dispatch=useDispatch()
   return (
-    <div className={`bg-[url('${projects.img}')] rounded-sm relative bg-no-repeat h-[246px] w-[376px]`}>
+    <div className={`bg-[url("${projects.img}")] rounded-sm relative bg-no-repeat h-[246px] w-[376px]`}>
     <div className='absolute top-0 bg-zinc-800 opacity-80 h-[246px] w-[376px] '>
       
     </div>
     <div className='absolute font-extrabold top-0 h-[246px] w-[376px] flex flex-col justify-center items-center'>
     <p>{projects.heading}</p>
-    <div className='mt-[6px] h-[26px] w-[160px] rounded-lg font-light flex justify-center items-center border-[1px]'>Click to see Details</div>
+    <Link to='/singleProject' onClick={()=>{dispatch(updateIndex(index))}} className='mt-[6px] h-[26px] w-[160px] rounded-lg font-light flex justify-center items-center border-[1px]'>Click to see Details</Link>
     </div>
   </div>
   )
@@ -24,7 +29,7 @@ const Highlights = () => {
     {
       projects.slice(0,3).map((val,i)=>{
         return (
-          <Card key={i} projects={val}/>
+          <Card key={i} projects={val} index={i}/>
         )
       })
     }

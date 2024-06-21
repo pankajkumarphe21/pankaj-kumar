@@ -9,10 +9,9 @@ import Skills from "./Components/Skills";
 import Projects from "./Components/Projects";
 import Experience from "./Components/Experience";
 import SingleProject from "./Components/SingleProject";
-import { useSelector } from "react-redux";
+import Footer from "./Components/Footer";
 
 const App = () => {
-  const index=useSelector(state=>state.index)
   return (
     <div>
       <BrowserRouter>
@@ -24,9 +23,10 @@ const App = () => {
           <Route path="/education" element={<Education/>} />
           <Route path="/skills" element={<Skills/>} />
           <Route path="/projects" element={<Projects/>} />
-          <Route path="/singleproject" element={<SingleProject index={index}  />} />
+          <Route path="/singleproject" element={<SingleProject/>} />
           <Route path="/experience" element={<Experience/>} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </div>
   );

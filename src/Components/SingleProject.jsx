@@ -3,8 +3,10 @@ import { projects } from "./Projects";
 import { Link } from "react-router-dom";
 import { FaGithub } from "react-icons/fa6";
 import { TbWorld } from "react-icons/tb";
+import { useSelector } from "react-redux";
 
-const SingleProject = ({index}) => {
+const SingleProject = () => {
+  const index=useSelector(state=>state.index)
   const project=projects[index]
   return (
     <div className="flex justify-center max-sm:h-[1000px] h-[590px] mt-[90px]">
