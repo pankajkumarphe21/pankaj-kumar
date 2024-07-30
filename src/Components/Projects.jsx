@@ -5,6 +5,8 @@ import { FaExpand } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import {updateIndex} from './../features/project/projectSlice'
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 export const projects = [
   {
@@ -106,8 +108,15 @@ const Projects = () => {
       </div>
     );
   };
+  useGSAP(()=>{
+    gsap.from(".projects",{
+      opacity:0,
+      duration:1,
+      y:100
+    })
+  })
   return (
-    <div className="w-[100%] flex justify-center items-center mb-[100px]">
+    <div className="projects w-[100%] flex justify-center items-center mb-[100px]">
       <div className="mt-[60px] w-[80%] flex flex-col justify-center items-center">
         <h1 className="text-4xl my-[20px] text-orange-400">Project Area</h1>
         <div className="flex flex-wrap gap-[60px] justify-center">

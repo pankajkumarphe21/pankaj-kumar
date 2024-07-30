@@ -1,3 +1,5 @@
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
 import React from 'react'
 import { CgToolbox } from "react-icons/cg";
 
@@ -25,8 +27,14 @@ const element=()=>(
 )
 
 const Experience = () => {
+  useGSAP(()=>{
+    gsap.from(".experience",{
+      opacity:0,
+      duration:2
+    })
+  })
   return (
-    <div className='mt-[60px]'>
+    <div className='experience mt-[60px]'>
       <h1 className='w-[100%] font-semibold flex justify-center text-4xl text-orange-300 mt-[90px]'>Experience</h1>
       <div className='flex justify-center'>
       <h1 className='w-[100%] max-sm:w-[80%] font-semibold flex justify-center text-lg mt-[9px]'>Bringing a blend of innovation, expertise, and dedication to every project, ensuring impactful results</h1>

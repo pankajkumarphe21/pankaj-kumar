@@ -1,3 +1,5 @@
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
 import React from 'react'
 
 const skills={
@@ -80,8 +82,15 @@ const skills={
 }
 
 const Skills = () => {
+  useGSAP(()=>{
+    gsap.from(".skills",{
+      opacity:0,
+      y:100,
+      duration:1
+    })
+  })
   return (
-    <div className='mt-[60px] flex flex-col items-center pb-[60px]'>
+    <div className='skills mt-[60px] flex flex-col items-center pb-[60px]'>
       <h1 className='mt-[50px] mb-[30px] text-[2.65rem] tracking-wide font-bold'>Skills</h1>
       <div className='flex w-[80%] justify-between max-sm:flex-col'>
       <div className='border-[3px] bg-white hover:scale-[1.02] ease-in-out duration-200 text-black rounded-md border-orange-400 max-sm:mb-[40px] max-sm:p-8 p-16 pt-8 pb-4 font-bold'>

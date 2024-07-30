@@ -4,14 +4,28 @@ import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
 
 const About = () => {
+  useGSAP(()=>{
+    gsap.from(".pic",{
+      opacity:0,
+      duration:1,
+      x:-100,
+    })
+    gsap.from(".content",{
+      opacity:0,
+      duration:1,
+      y:100,
+    })
+  })
   return (
     <div className='mt-[60px] flex w-[100%]'>
-      <div className='w-[24%] max-sm:hidden'>
+      <div className='pic w-[24%] max-sm:hidden'>
         <img src="/profile.jpg" className='h-[300px] w-[270px] ml-[20px] mt-[100px]' alt="" />
       </div>
-      <div className='mt-[30px] w-[70%] max-sm:w-[90%] max-sm:ml-[5%] flex-col items-center justify-center'>
+      <div className='content mt-[30px] w-[70%] max-sm:w-[90%] max-sm:ml-[5%] flex-col items-center justify-center'>
         <h1 className='text-4xl font-semibold flex justify-center'>About Me</h1>
         <p className='mt-[20px] flex items-center tracking-tight'><span className='mr-[14px] text-red-500 text-2xl'><BsFillRocketTakeoffFill/></span>Hello, I'm Pankaj Kumar, a B.Tech student at IIT (BHU), set to graduate in 2025 with a commendable CGPA of 7.33. My academic journey reflects my commitment to learning and growth, and I am excited to channel my passion for excellence into the tech industry.</p>
         <p className='mt-[20px] flex items-center tracking-tight'><span className='mr-[14px] text-red-500 text-2xl'><BsFillRocketTakeoffFill/></span>I'm not just your average tech enthusiast - I wield proficiency in a range of programming languages and tools, from C++, JavaScript, HTML, and CSS to a versatile toolkit including NodeJS, Express.JS, MongoDB, ReactJS, NextJS, Git, GitHub, VSCode, and Tailwind CSS. But it's not just about the technical stuff - my approach is also marked by subtle qualities like a hardworking ethos, unwavering dedication, and effective communication and teamwork skills.</p>

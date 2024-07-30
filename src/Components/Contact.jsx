@@ -2,10 +2,18 @@ import React from 'react'
 import { IoMdCall } from 'react-icons/io'
 import { FaGithub,FaLinkedin,FaTwitter } from 'react-icons/fa'
 import { BsInstagram } from 'react-icons/bs'
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
 
 const Contact = () => {
+  useGSAP(()=>{
+    gsap.from(".contact",{
+      opacity:0,
+      duration:2
+    })
+  })
   return (
-    <div className='sm:h-screen w-[100%] text-black mt-[60px]'>
+    <div className='contact sm:h-screen w-[100%] text-black mt-[60px]'>
       <div className='sm:h-[42%] rounded-b-[6%] w-[100%] flex flex-col font-semibold justify-end text-[2.75rem] max-sm:text-xl bg-yellow-600'>
       <div className='flex h-[69%] max-sm:mt-[50px] mb-[10px] justify-center items-end'>Let's Create Something Together!</div>
       <div className='flex max-sm:flex-col max-sm:items-center justify-center gap-[2%]'>

@@ -5,10 +5,19 @@ import { HiOutlineDesktopComputer } from "react-icons/hi";
 import PreviewSkills from '../parts/PreviewSkills'
 import Highlights from '../parts/Highlights'
 import { Link } from "react-router-dom";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const Home = () => {
+  useGSAP(()=>{
+    gsap.from(".home",{
+      opacity:0,
+      duration:1,
+      y:100
+    })
+  })
   return (
-    <div className="flex flex-col top-[60px]">
+    <div className="flex flex-col home top-[60px]">
       <div className="h-[400px] flex max-sm:flex-col">
         <div className="w-[47%] max-sm:w-[90%] py-[11%] pl-[12%] max-sm:py-[22%] flex flex-col">
           <h1 className="text-blue-500 font-medium max-sm:text-[1.5rem] text-[2.5rem] mb-[1px]">
@@ -23,16 +32,16 @@ const Home = () => {
             make my dreams into reality!
           </p>
           <div className="flex mt-[50px]">
-            <div className="h-[86px] w-[96px] hover:scale-105 border-2 rounded-lg flex flex-col items-center">
+            <div className="h-[86px] cursor-pointer w-[96px] hover:scale-105 border-2 rounded-lg flex flex-col items-center">
               <IoMdCall className="mt-[16px] text-[24px]" />
               <a href="tel:+917751016519" className="mt-[9px] text-sm">Fix A Call</a>
             </div>
-            <div className="h-[86px] hover:scale-105 w-[96px] border-2 ml-[20px] rounded-lg flex flex-col items-center">
+            <div className="h-[86px] cursor-pointer hover:scale-105 w-[96px] border-2 ml-[20px] rounded-lg flex flex-col items-center">
               <MdCloudDownload className="mt-[10px] text-[24px]" />
               <a target="_blank" href="https://drive.google.com/file/d/18ienx3WJmQKw5E1SobzMeqAaBkKR5VNX/view?usp=sharing" className="mt-[5px] text-sm">Download</a>
               <a target="_blank" href="https://drive.google.com/file/d/18ienx3WJmQKw5E1SobzMeqAaBkKR5VNX/view?usp=sharing" className="text-sm">Resume</a>
             </div>
-            <div className="h-[86px] w-[96px] hover:scale-105 border-2 ml-[20px] rounded-lg flex flex-col items-center">
+            <div className="h-[86px] cursor-pointer w-[96px] hover:scale-105 border-2 ml-[20px] rounded-lg flex flex-col items-center">
               <HiOutlineDesktopComputer className="mt-[10px] text-[24px]" />
               <Link className="mt-[5px] text-sm" to={'/projects'}>Go to</Link>
               <Link className="text-sm" to={'/projects'}>Projects</Link>

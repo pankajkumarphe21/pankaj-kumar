@@ -4,12 +4,20 @@ import { Link } from "react-router-dom";
 import { FaGithub } from "react-icons/fa6";
 import { TbWorld } from "react-icons/tb";
 import { useSelector } from "react-redux";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const SingleProject = () => {
+  useGSAP(()=>{
+    gsap.from('.project',{
+      opacity:0,
+      duration:1
+    })
+  })
   const index=useSelector(state=>state.index)
   const project=projects[index]
   return (
-    <div className="flex justify-center max-sm:h-[1000px] h-[590px] mt-[90px]">
+    <div className="project flex justify-center max-sm:h-[1000px] h-[590px] mt-[90px]">
       <div className="w-[80%] max-sm:flex-col max-sm:h-[980px] flex shadow-xl h-[540px]">
           <div className="flex">
           <Link to='/projects'>

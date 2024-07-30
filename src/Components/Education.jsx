@@ -1,6 +1,15 @@
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
 import React, { useState } from 'react'
 
 const Education = () => {
+  useGSAP(()=>{
+    gsap.from("#eduaction",{
+      opacity:0,
+      duration:1,
+      y:100
+    })
+  })
   const High_School=()=>(
     <div id='hs' className='bg-[#202020] shadow-2xl mt-[35px] absolute left-[860px] h-[290px] rounded-[20px] p-9 w-[340px] max-sm:mt-[300px] max-sm:left-[20px]'>
       <h1 className='text-3xl font-bold'>High School</h1>
