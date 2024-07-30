@@ -6,12 +6,16 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-    const toggleNavbar = () => {
+    const toggleNavbar = (e) => {
         setIsOpen(!isOpen);
+        e.stopPropagation();
     };
     const nav=document.getElementById("navbar");
     if(isOpen){
       nav.classList.add('max-sm:flex')
+      window.addEventListener("click",(e)=>{
+        toggleNavbar(e)
+      })
     }
     else{
       nav?.classList.remove('max-sm:flex')
