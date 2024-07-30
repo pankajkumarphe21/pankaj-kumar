@@ -6,8 +6,8 @@ const Education = () => {
   useGSAP(()=>{
     gsap.from("#eduaction",{
       opacity:0,
-      duration:1,
-      y:100
+      duration:0.8,
+      y:50
     })
   })
   const High_School=()=>(

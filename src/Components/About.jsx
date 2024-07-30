@@ -11,13 +11,13 @@ const About = () => {
   useGSAP(()=>{
     gsap.from(".pic",{
       opacity:0,
-      duration:1,
+      duration:0.8,
       x:-100,
     })
     gsap.from(".content",{
       opacity:0,
-      duration:1,
-      y:100,
+      duration:0.8,
+      y:50,
     })
   })
   return (

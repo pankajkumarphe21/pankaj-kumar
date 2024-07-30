@@ -1,7 +1,16 @@
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
 import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Footer = () => {
+  useGSAP(()=>{
+    gsap.from("#footer",{
+      opacity:0,
+      y:50,
+      duration:0.8
+    })
+  })
   return (
     <div id='footer' className='mt-[20px] sm:hidden mb-[20px]'>
       <div className="h-[1px] w-[100%] bg-white mb-[20px]"></div>

@@ -9,7 +9,7 @@ const Contact = () => {
   useGSAP(()=>{
     gsap.from(".contact",{
       opacity:0,
-      duration:2
+      duration:1
     })
   })
   return (

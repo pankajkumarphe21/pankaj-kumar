@@ -30,7 +30,7 @@ const Experience = () => {
   useGSAP(()=>{
     gsap.from(".experience",{
       opacity:0,
-      duration:2
+      duration:1
     })
   })
   return (
