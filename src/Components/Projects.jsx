@@ -35,7 +35,7 @@ export const projects = [
     heading: "Notes App",
     image: "/w3.png",
     github: "https://github.com/pankajkumarphe21/trial",
-    live:"https://trial-green.vercel.app/",
+    live:"https://trial-theta-indol.vercel.app/",
     tools:['NodeJs','ExpressJs','Mongo DB','Mongoose','EJS','JsonWebToken','Tailwind CSS'],
     category:'Backend',
     description:['Made a Note Making website from scratch.',
