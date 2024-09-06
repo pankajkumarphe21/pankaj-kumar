@@ -17,10 +17,10 @@ const Contact = () => {
       <div className='sm:h-[42%] rounded-b-[6%] w-[100%] flex flex-col font-semibold justify-end text-[2.75rem] max-sm:text-xl bg-yellow-600'>
       <div className='flex h-[69%] max-sm:mt-[50px] mb-[10px] justify-center items-end'>Let's Create Something Together!</div>
       <div className='flex max-sm:flex-col max-sm:items-center justify-center gap-[2%]'>
-        <a href='mailto:pankaj.kumar.phe21@itbhu.ac.in' className='bg-white hover:border-2 hover:border-black max-sm:text-xl max-sm:w-[95%] text-2xl py-5 px-10 rounded-md max-sm:mb-[20px]'>
+        <a href='mailto:pankaj.kumar.phe21@itbhu.ac.in' className='bg-white hover:border-2 hover:border-black border-2 border-white max-sm:text-xl max-sm:w-[95%] text-2xl py-5 px-10 rounded-md max-sm:mb-[20px]'>
           Mail me at: pankaj.kumar.phe21@itbhu.ac.in
         </a>
-        <a target='_blank' href='https://drive.google.com/file/d/18ienx3WJmQKw5E1SobzMeqAaBkKR5VNX/view' className='bg-white hover:border-2 hover:border-black text-2xl py-5 px-10 max-sm:text-xl rounded-md'>
+        <a target='_blank' href='https://drive.google.com/file/d/18ienx3WJmQKw5E1SobzMeqAaBkKR5VNX/view' className='bg-white hover:border-2 hover:border-black border-2 border-white text-2xl py-5 px-10 max-sm:text-xl rounded-md'>
           Download Resume
         </a>
       </div>
