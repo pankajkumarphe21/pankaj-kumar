@@ -38,7 +38,7 @@ const Navbar = () => {
     <div className="fixed top-0 w-[100%] shadow-xl h-[60px] z-10">
       <div className="bg-zinc-800 font-bold h-[60px] text-xl flex max-sm:gap-[20px] gap-[1%] items-center">
         <div className="h-[60px] img overflow-hidden ml-[9%] flex justify-center items-center">
-            <img id="image" className="rounded-[50%] border-red-500 border-2" src="/profile.jpg" height={50} width={50} alt="" />
+            <img id="image" className="rounded-[50%] border-red-500 border-2" src="/profile.png" height={50} width={50} alt="" />
         </div>
         <h1 className="text-lg img text-orange-400">Welcome</h1>
       <div className="flex gap-10 ml-[7%] max-sm:hidden">

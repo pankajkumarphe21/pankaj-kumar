@@ -53,7 +53,7 @@ const Home = () => {
           </div>
         </div>
         <div className="pl-[10%] pt-[5%] max-sm:pl-[0%] max-sm:flex max-sm:justify-center">
-          <img className="h-[400px] max-sm:h-[250px]" src="/profile.jpg" alt="" />
+          <img className="h-[400px] max-sm:h-[250px]" src="/profile.png" alt="" />
         </div>
         
       </div>
