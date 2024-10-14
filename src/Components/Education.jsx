@@ -1,6 +1,6 @@
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 const Education = () => {
   useGSAP(()=>{
@@ -73,8 +73,6 @@ const Education = () => {
     document.getElementById('timeline').classList.toggle('hidden')
     document.getElementById('btn').classList.toggle('max-sm:mt-[100px]')
     document.getElementById('btn').classList.toggle('max-sm:mt-[650px]')
-    document.getElementById('footer')?.classList.toggle('mt-[20px]')
-    document.getElementById('footer')?.classList.toggle('mt-[1320px]')
     if(t){
       setRender([High_School1,Intermediate1,Current1]);
       setT(!t)
@@ -85,7 +83,7 @@ const Education = () => {
     }
   }
   return (
-    <div id='eduaction' className='mt-[60px] relative max-sm:mb-[700px]'>
+    <div id='eduaction' className={`mt-[60px] relative ${render.length==1 ? 'max-sm:mb-[800px]': 'max-sm:mb-[1300px]'} `}>
       <h1 className='mt-[100px] max-sm:text-[28px] text-[2.45rem] w-[100%] flex justify-center text-orange-400 tracking-wide font-medium'>My Education</h1>
       <h3 className='text-xl max-sm:text-[16px] w-[100%] flex justify-center'>Here is a quick Timeline of my educational journey</h3>
       <div className="absolute max-sm:ml-[20px] ml-[120px] mt-[70px]">
