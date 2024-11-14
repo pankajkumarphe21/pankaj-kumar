@@ -42,6 +42,18 @@ export const projects = [
       'Notes will be saved even after logout because notes will be saved in the Database.'
     ]
   },
+  {
+    heading: "Social App",
+    image: "/w4.png",
+    github: "https://github.com/pankajkumarphe21/socialclient",
+    live:"https://socialclient-azure.vercel.app/",
+    tools:['NodeJs','ExpressJs','Mongo DB','Mongoose','React','Multer','Redux Toolkit','Redux Persist'],
+    category:'Full Stack',
+    description:['Implemented backend functionality to handle user posts, friend searches, and data storage.',
+      'Utilized Redux for state management and SASS for styling and UI enhancement.',
+      'Integrated Redux Persist to maintain and rehydrate the state, providing data consistency across page reloads.'
+    ]
+  },
 ];
 
 const Projects = () => {

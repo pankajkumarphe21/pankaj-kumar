@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import {projects} from './../Components/Projects'
 import { Link } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
@@ -27,7 +27,7 @@ const Highlights = () => {
       <p className='text-3xl font-bold mb-[30px]'>PortFolio Highlights</p>
       <div className='flex flex-wrap justify-center items-center gap-[50px]'>
     {
-      projects.slice(0,3).map((val,i)=>{
+      projects.slice(0,4).map((val,i)=>{
         return (
           <Card key={i} projects={val} index={i}/>
         )
