@@ -170,6 +170,12 @@ const Skills = () => {
         }
         </div>
       </div>
+      <div className='flex justify-center mb-[30px] mt-10 items-center'>
+        <a href="https://leetcode.com/u/pank2763/" target='_blank' className="h-[80px] w-[166px] text-white hover:scale-105 border-2 rounded-lg flex flex-col items-center">
+        <img className='h-[30px] mt-2' src="https://leetcode.com/_next/static/images/logo-dark-c96c407d175e36c81e236fcfdd682a0b.png" alt="" />
+          <span className="mt-[9px] text-sm">Leetcode profile</span>
+        </a>
+      </div>
     </div>
   )
 }
