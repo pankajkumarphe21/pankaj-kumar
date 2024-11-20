@@ -56,7 +56,7 @@ const Experience = () => {
           <li>Empowering students to explore and register for diverse opportunities through the intuitive platform.</li>
         </ul>
         <div className='mt-[10px] ml-[40px]'><span className='text-blue-500 text-lg'>Links:- </span><a target='_blank' href="https://www.spiritiitbhu.com/">Website</a></div>
-        <div className='mt-[1px] ml-[40px]'><span className='text-blue-500 text-lg'>Works:- </span><a target='_blank' href="https://github.com/Tonystark121/Spirit-24Website">Github</a></div>
+        <div className='mt-[1px] ml-[40px]'><span className='text-blue-500 text-lg'>Works:- </span><a target='_blank' href="https://github.com/itsgeekhokage/spirit-24">Github</a></div>
       </div>
       </div>
     </div>
