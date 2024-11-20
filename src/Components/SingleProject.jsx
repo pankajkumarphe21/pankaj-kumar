@@ -17,7 +17,7 @@ const SingleProject = () => {
   const index=useSelector(state=>state.index)
   const project=projects[index]
   return (
-    <div className="project flex justify-center max-sm:h-[1000px] h-[590px] mt-[90px]">
+    <div className="project flex justify-center max-sm:h-[1200px] h-[590px] mt-[90px]">
       <div className="w-[80%] max-sm:flex-col max-sm:h-[980px] flex shadow-xl h-[540px]">
           <div className="flex">
           <Link to='/projects'>
