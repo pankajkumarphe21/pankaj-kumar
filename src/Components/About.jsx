@@ -34,7 +34,7 @@ const About = () => {
         <div className='flex max-sm:flex-col mt-[50px] text-2xl'>
         <div className='ml-[103px] max-sm:ml-[43px] flex'><p className='text-yellow-500'>Based in </p>: India </div>
         <div className='ml-[43px] flex'><p className='text-yellow-500'>Current Company </p>: NA </div>
-        <div className='ml-[43px] flex'><p className='text-yellow-500'>Last Company </p>: Spirit </div>
+        <div className='ml-[43px] flex'><p className='text-yellow-500'>Last Company </p>: Hindustan Morning </div>
         </div>
         <div className='flex gap-5 text-[30px] mt-[50px] mb-[60px] justify-center items-center'>
         <div className='border-2 p-3 hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-300 rounded-[50%]'><a target='_blank' href="https://x.com/pankaj3k3"><FaTwitter/></a></div>
