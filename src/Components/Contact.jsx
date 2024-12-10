@@ -31,7 +31,7 @@ const Contact = () => {
         <div className='flex max-sm:flex-col max-sm:w-[80%] gap-[50px]'>
         <div className='flex justify-center gap-[40px]'>
           
-        <div onClick={()=>navigate('/fixcall')} className="h-[86px] w-[96px] text-white hover:scale-105 border-2 rounded-lg flex flex-col items-center">
+        <div onClick={()=>navigate('/fixcall')} className="h-[86px] w-[96px] text-white hover:scale-105 border-2 cursor-pointer rounded-lg flex flex-col items-center">
               <IoMdCall className="mt-[16px] text-[24px]" />
               <span className="mt-[9px] text-sm">Fix A Call</span>
             </div>
