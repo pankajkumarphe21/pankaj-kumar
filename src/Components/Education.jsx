@@ -86,7 +86,7 @@ const Education = () => {
   return (
     <div id='eduaction' className={`mt-[60px] relative ${render.length==1 ? 'max-sm:mb-[800px]': 'max-sm:mb-[1300px]'} `}>
       <h1 className='mt-[100px] max-sm:text-[28px] text-[2.45rem] w-[100%] flex justify-center text-orange-400 tracking-wide font-medium'>My Education</h1>
-      <h3 className='text-xl max-sm:text-[16px] w-[100%] flex justify-center'>Here is a quick Timeline of my educational journey</h3>
+      <h3 className={`text-xl max-sm:text-[16px] w-[100%] flex justify-center ${styles.co}`}>Here is a quick Timeline of my educational journey</h3>
       <div className="absolute max-sm:ml-[20px] ml-[120px] mt-[70px]">
       <div id='timeline' className="absolute w-[100%]">
       <div className='w-[680px] max-sm:w-[340px] h-[2px] bg-white absolute mt-[100px]'></div>
