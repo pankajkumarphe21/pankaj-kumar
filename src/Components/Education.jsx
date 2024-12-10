@@ -1,6 +1,7 @@
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import React, { useEffect, useState } from 'react'
+import styles from  './education.module.css'
 
 const Education = () => {
   useGSAP(()=>{
@@ -14,7 +15,7 @@ const Education = () => {
     <div id='hs' className='bg-[#202020] shadow-2xl mt-[35px] absolute left-[860px] h-[290px] rounded-[20px] p-9 w-[340px] max-sm:mt-[300px] max-sm:left-[20px]'>
       <h1 className='text-3xl font-bold'>High School</h1>
       <h2 className='mt-[10px] text-md'>DAV Public School</h2>
-      <h3 className='mt-[8px] text-lg'>Kansbahal, Sundergarh, Odisha</h3>
+      <h3 className={`mt-[8px] text-lg ${styles.co}`}>Kansbahal, Sundergarh, Odisha</h3>
       <h4 className='mt-[6px] font-bold text-2xl'>Percentage: 92.8%</h4>
       <h4 className='mt-[10px] font-semibold'>Subjects :- Maths, Science, English, Hindi, Social Science</h4>
     </div>
@@ -23,7 +24,7 @@ const Education = () => {
     <div id='im' className='bg-[#202020] shadow-2xl mt-[35px] absolute left-[860px] h-[290px] rounded-[20px] p-9 w-[340px] max-sm:mt-[300px] max-sm:left-[20px]'>
       <h1 className='text-3xl font-bold text-blue-500'>Intermediate</h1>
       <h2 className='mt-[10px] text-md'>DAV Public School</h2>
-      <h3 className='mt-[8px] text-lg'>Kansbahal, Sundergarh, Odisha</h3>
+      <h3 className={`mt-[8px] text-lg ${styles.co}`}>Kansbahal, Sundergarh, Odisha</h3>
       <h4 className='mt-[6px] font-bold text-2xl'>Percentage: 94.8%</h4>
       <h4 className='mt-[10px] font-semibold'>Subjects :- Maths, Science, English, Hindi, Social Science</h4>
     </div>
@@ -32,7 +33,7 @@ const Education = () => {
     <div id='hs' className='bg-[#202020] max-sm:left-[25px] shadow-2xl mt-[35px] absolute left-[90px] h-[290px] rounded-[20px] p-9 w-[340px]'>
       <h1 className='text-3xl font-bold'>High School</h1>
       <h2 className='mt-[10px] text-md'>DAV Public School</h2>
-      <h3 className='mt-[8px] text-lg'>Kansbahal, Sundergarh, Odisha</h3>
+      <h3 className={`mt-[8px] text-lg ${styles.co}`}>Kansbahal, Sundergarh, Odisha</h3>
       <h4 className='mt-[6px] font-bold text-2xl'>Percentage: 92.8%</h4>
       <h4 className='mt-[10px] font-semibold'>Subjects :- Maths, Science, English, Hindi, Social Science</h4>
     </div>
@@ -41,7 +42,7 @@ const Education = () => {
     <div id='im' className='bg-[#202020] max-sm:left-[25px] max-sm:mt-[400px] shadow-2xl mt-[35px] absolute left-[475px] h-[290px] rounded-[20px] p-9 w-[340px]'>
       <h1 className='text-3xl font-bold text-blue-500'>Intermediate</h1>
       <h2 className='mt-[10px] text-md'>DAV Public School</h2>
-      <h3 className='mt-[8px] text-lg'>Kansbahal, Sundergarh, Odisha</h3>
+      <h3 className={`mt-[8px] text-lg ${styles.co}`}>Kansbahal, Sundergarh, Odisha</h3>
       <h4 className='mt-[6px] font-bold text-2xl'>Percentage: 94.8%</h4>
       <h4 className='mt-[10px] font-semibold'>Subjects :- Maths, Science, English, Hindi, Social Science</h4>
     </div>
