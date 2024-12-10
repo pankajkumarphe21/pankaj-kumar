@@ -4,11 +4,12 @@ import { MdCloudDownload } from "react-icons/md";
 import { HiOutlineDesktopComputer } from "react-icons/hi";
 import PreviewSkills from '../parts/PreviewSkills'
 import Highlights from '../parts/Highlights'
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
 const Home = () => {
+  const navigate=useNavigate()
   useGSAP(()=>{
     gsap.from(".home",{
       opacity:0,
@@ -36,9 +37,9 @@ const Home = () => {
             make my dreams into reality!
           </p>
           <div className="flex mt-[50px]">
-            <div className="h-[86px] cursor-pointer w-[96px] hover:scale-105 border-2 rounded-lg flex flex-col items-center">
+            <div onClick={()=>navigate('/fixcall')} className="h-[86px] cursor-pointer w-[96px] hover:scale-105 border-2 rounded-lg flex flex-col items-center">
               <IoMdCall className="mt-[16px] text-[24px]" />
-              <a href="tel:+917751016519" className="mt-[9px] text-sm">Fix A Call</a>
+              <div className="mt-[9px] text-sm">Fix A Call</div>
             </div>
             <div className="h-[86px] cursor-pointer hover:scale-105 w-[96px] border-2 ml-[20px] rounded-lg flex flex-col items-center">
               <MdCloudDownload className="mt-[10px] text-[24px]" />

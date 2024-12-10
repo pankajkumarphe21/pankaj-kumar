@@ -3,9 +3,11 @@ import { IoMdCall } from 'react-icons/io'
 import { FaGithub,FaLinkedin,FaTwitter } from 'react-icons/fa'
 import { BsInstagram } from 'react-icons/bs'
 import { useGSAP } from '@gsap/react'
+import { Link, useNavigate } from 'react-router-dom'
 import gsap from 'gsap'
 
 const Contact = () => {
+  const navigate=useNavigate()
   useGSAP(()=>{
     gsap.from(".contact",{
       opacity:0,
@@ -28,10 +30,11 @@ const Contact = () => {
       <div className='flex flex-col items-center mt-[40px]'>
         <div className='flex max-sm:flex-col max-sm:w-[80%] gap-[50px]'>
         <div className='flex justify-center gap-[40px]'>
-        <a href="tel:+917751016519" className="h-[86px] w-[96px] text-white hover:scale-105 border-2 rounded-lg flex flex-col items-center">
+          
+        <div onClick={()=>navigate('/fixcall')} className="h-[86px] w-[96px] text-white hover:scale-105 border-2 rounded-lg flex flex-col items-center">
               <IoMdCall className="mt-[16px] text-[24px]" />
               <span className="mt-[9px] text-sm">Fix A Call</span>
-            </a>
+            </div>
             <a href="https://github.com/pankajkumarphe21" target='_blank' className="h-[86px] w-[96px] text-white hover:scale-105 border-2 rounded-lg flex flex-col items-center">
               <FaGithub className="mt-[16px] text-[24px]" />
               <span className="mt-[9px] text-sm">Github</span>

@@ -10,6 +10,7 @@ import Projects from "./Components/Projects";
 import Experience from "./Components/Experience";
 import SingleProject from "./Components/SingleProject";
 import Footer from "./Components/Footer";
+import MailModel from "./parts/MailModel";
 
 
 const App = () => {
@@ -26,6 +27,7 @@ const App = () => {
           <Route path="/projects" element={<Projects/>} />
           <Route path="/singleproject" element={<SingleProject/>} />
           <Route path="/experience" element={<Experience/>} />
+          <Route path="/fixcall" element={<MailModel/>} />
         </Routes>
         <Footer/>
       </BrowserRouter>
