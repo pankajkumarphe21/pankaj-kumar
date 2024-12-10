@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styles from "./MailModel.module.css";
+import { useNavigate } from "react-router-dom";
 
 const MailModel = () => {
   const [name, setName] = useState("");
@@ -7,6 +8,7 @@ const MailModel = () => {
   const [subject, setSubject] = useState("");
   const [preferableSlot, setPreferableSlot] = useState("");
   const [secondPreferableSlot, setSecondPreferableSlot] = useState("");
+  const navigate=useNavigate()
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -22,7 +24,7 @@ const MailModel = () => {
 
   return (
     <div className={`${styles.modal} page`}>
-      <div className={styles.action_button}>
+      <div onClick={()=>navigate('/')} className={styles.action_button}>
         <span>Back</span>
       </div>
       <form
