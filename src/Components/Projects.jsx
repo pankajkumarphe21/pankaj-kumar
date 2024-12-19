@@ -123,8 +123,8 @@ const Projects = () => {
   useGSAP(()=>{
     gsap.from(".projects",{
       opacity:0,
-      duration:0.8,
-      y:50
+      duration:1.3,
+      y:20
     })
   })
   return (
