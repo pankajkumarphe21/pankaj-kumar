@@ -44,7 +44,7 @@ const Home = () => {
             <div className="h-[86px] cursor-pointer hover:scale-105 w-[96px] border-2 ml-[20px] rounded-lg flex flex-col items-center">
               <MdCloudDownload className="mt-[10px] text-[24px]" />
               <a target="_blank" href="https://drive.google.com/file/d/1GIFZewDg4HZ4QhNTncZrOiBRaExJ8iGJ/view?usp=sharing" className="mt-[5px] text-sm">Download</a>
-              <a target="_blank" href="https://drive.google.com/file/d/1GIFZewDg4HZ4QhNTncZrOiBRaExJ8iGJ/view?usp=sharing" className="text-sm">Resume</a>
+              <a target="_blank" href="https://drive.google.com/file/d/1M3SlWzeCKERIV35YOt3XCbBwAaT3GVIv/view?usp=sharing" className="text-sm">Resume</a>
             </div>
             <div className="h-[86px] cursor-pointer w-[96px] hover:scale-105 border-2 ml-[20px] rounded-lg flex flex-col items-center">
               <HiOutlineDesktopComputer className="mt-[10px] text-[24px]" />

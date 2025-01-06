@@ -22,7 +22,7 @@ const Contact = () => {
         <a href='mailto:pankaj.kumar.phe21@itbhu.ac.in' className='bg-white hover:border-2 hover:border-black border-2 border-white max-sm:text-xl max-sm:w-[95%] text-2xl py-5 px-10 rounded-md max-sm:mb-[20px]'>
           Mail me at: pankaj.kumar.phe21@itbhu.ac.in
         </a>
-        <a target='_blank' href='https://drive.google.com/file/d/1GIFZewDg4HZ4QhNTncZrOiBRaExJ8iGJ/view?usp=sharing' className='bg-white hover:border-2 hover:border-black border-2 border-white text-2xl py-5 px-10 max-sm:text-xl rounded-md'>
+        <a target='_blank' href='https://drive.google.com/file/d/1M3SlWzeCKERIV35YOt3XCbBwAaT3GVIv/view?usp=sharing' className='bg-white hover:border-2 hover:border-black border-2 border-white text-2xl py-5 px-10 max-sm:text-xl rounded-md'>
           Download Resume
         </a>
       </div>
