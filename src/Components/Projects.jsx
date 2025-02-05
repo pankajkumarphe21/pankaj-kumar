@@ -20,15 +20,26 @@ export const projects = [
       'A comprehensive platform providing detailed event information and streamlined event registration processes.'
     ]
   },
+  // {
+  //   heading: "Genome Diagnosis",
+  //   image: "/w2.png",
+  //   github: "https://github.com/Tonystark121/GenomeDiagnosis",
+  //   live:"https://genome-diagnosis.vercel.app/",
+  //   tools:['ReactJs','HTML','CSS','Javascript'],
+  //   category:'FrontEnd',
+  //   description:[' Genome Diagnosis is a platform where genomic technologies are made more accessible and affordable.',
+  //     'I added many components like footer, about section, teams component.'
+  //   ]
+  // },
   {
-    heading: "Genome Diagnosis",
-    image: "/w2.png",
-    github: "https://github.com/Tonystark121/GenomeDiagnosis",
-    live:"https://genome-diagnosis.vercel.app/",
-    tools:['ReactJs','HTML','CSS','Javascript'],
-    category:'FrontEnd',
-    description:[' Genome Diagnosis is a platform where genomic technologies are made more accessible and affordable.',
-      'I added many components like footer, about section, teams component.'
+    heading: "AI-Powered Chat Application",
+    image: "/w5.png",
+    github: "https://github.com/pankajkumarphe21/soen_client",
+    live:"https://soen-client.vercel.app",
+    tools:[ 'React', 'Tailwind CSS', 'ExpressJs', 'NodeJs', 'MongoDB', 'WebContainer', 'highlight.js'],
+    category:'Full Stack',
+    description:['Developed a real-time chat application using polling for message updates.',
+      'Integrated Gemini AI API to enable AI-powered responses within chat conversations.',' Implemented a web-based code editor with highlight.js for syntax highlighting.',' Utilized WebContainer to run Express.js applications directly in the frontend.'
     ]
   },
   {
