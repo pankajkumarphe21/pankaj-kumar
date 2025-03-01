@@ -41,10 +41,10 @@ const Home = () => {
               <IoMdCall className="mt-[16px] text-[24px]" />
               <div className="mt-[9px] text-sm">Fix A Call</div>
             </div>
-            <div onClick={()=>{window.open('https://drive.google.com/file/d/1b9UK8h4KI6dPUswX0c3ajISwVAuZdf2H/view?usp=sharing', '_blank'); }} className="h-[86px] cursor-pointer hover:scale-105 w-[96px] border-2 ml-[20px] rounded-lg flex flex-col items-center">
+            <div onClick={()=>{window.open('https://drive.google.com/file/d/1NdTFxDG9mLBdUyZi69RvfqbxneWVojYv/view?usp=sharing', '_blank'); }} className="h-[86px] cursor-pointer hover:scale-105 w-[96px] border-2 ml-[20px] rounded-lg flex flex-col items-center">
               <MdCloudDownload className="mt-[10px] text-[24px]" />
-              <a target="_blank" href="https://drive.google.com/file/d/1b9UK8h4KI6dPUswX0c3ajISwVAuZdf2H/view?usp=sharing" className="mt-[5px] text-sm">Download</a>
-              <a target="_blank" href="https://drive.google.com/file/d/1b9UK8h4KI6dPUswX0c3ajISwVAuZdf2H/view?usp=sharing" className="text-sm">Resume</a>
+              <a target="_blank" href="https://drive.google.com/file/d/1NdTFxDG9mLBdUyZi69RvfqbxneWVojYv/view?usp=sharing" className="mt-[5px] text-sm">Download</a>
+              <a target="_blank" href="https://drive.google.com/file/d/1NdTFxDG9mLBdUyZi69RvfqbxneWVojYv/view?usp=sharing" className="text-sm">Resume</a>
             </div>
             <div onClick={()=>{navigate('/projects')}} className="h-[86px] cursor-pointer w-[96px] hover:scale-105 border-2 ml-[20px] rounded-lg flex flex-col items-center">
               <HiOutlineDesktopComputer className="mt-[10px] text-[24px]" />
