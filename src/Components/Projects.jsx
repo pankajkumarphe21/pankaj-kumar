@@ -20,17 +20,6 @@ export const projects = [
       'A comprehensive platform providing detailed event information and streamlined event registration processes.'
     ]
   },
-  // {
-  //   heading: "Genome Diagnosis",
-  //   image: "/w2.png",
-  //   github: "https://github.com/Tonystark121/GenomeDiagnosis",
-  //   live:"https://genome-diagnosis.vercel.app/",
-  //   tools:['ReactJs','HTML','CSS','Javascript'],
-  //   category:'FrontEnd',
-  //   description:[' Genome Diagnosis is a platform where genomic technologies are made more accessible and affordable.',
-  //     'I added many components like footer, about section, teams component.'
-  //   ]
-  // },
   {
     heading: "AI-Powered Chat Application",
     image: "/w5.png",
