@@ -32,8 +32,7 @@ const Home = () => {
             Full Stack Developer, Data Analyst
           </p>
           <p className="text-[1.3rem] max-sm:text-[0.9rem] pr-[12%]">
-            Hi there, I am Pankaj, a final year student at IIT BHU striving to
-            make my dreams into reality!
+            Hi there, I am Pankaj, Software Developer at Field Genie
           </p>
           <div className="flex mt-[50px]">
             <div onClick={()=>navigate('/fixcall')} className="h-[86px] cursor-pointer w-[96px] hover:scale-105 border-2 rounded-lg flex flex-col items-center">

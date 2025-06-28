@@ -2,11 +2,11 @@ import React, { useEffect, useState } from 'react'
 
 const previewSkills = () => {
   const Card=({value})=>(
-    <div className='border-2 border-white text-orange-500 rounded-[50%] flex justify-center items-center h-[100px] w-[130px]'>
+    <div className='border-2 border-white hover:scale-105 text-orange-500 rounded-[50%] flex justify-center items-center h-[100px] w-[130px]'>
       {value}
     </div>
   )
-  const skills=['ReactJS','Node.js','Express.js','Mongoose','C++','C','JavaScript','Python','HTML','CSS','Excel','Github','Git','VSCode']
+  const skills=['ReactJS','Node.js','Express.js','Mongoose','C++','C','JavaScript','Python','HTML','CSS','Excel','Github','Git','VSCode','Docker','Redis']
   return (
     <div className='flex justify-center'>
       <div className='mt-[20px] w-[80%] flex flex-col justify-center items-center'>
