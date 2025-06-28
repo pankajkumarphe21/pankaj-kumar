@@ -33,7 +33,7 @@ const About = () => {
         <p className='mt-[20px] flex items-center tracking-tight'><span className='mr-[14px] text-red-500 text-2xl'><BsFillRocketTakeoffFill/></span>I am eager to apply my skills in practical scenarios and always open to engaging discussions, exploring collaborations, or sharing insights into the ever-evolving tech landscape. I am enthusiastic about embracing new opportunities and contributing to innovative endeavors!</p>
         <div className='flex max-sm:flex-col mt-[50px] text-2xl'>
         <div className='ml-[103px] max-sm:ml-[43px] flex'><p className='text-yellow-500'>Based in </p>: India </div>
-        <div className='ml-[43px] flex'><p className='text-yellow-500'>Current Company </p>: NA </div>
+        <div className='ml-[43px] flex'><p className='text-yellow-500'>Current Company </p>: Field Genie </div>
         <div className='ml-[43px] flex'><p className='text-yellow-500'>Last Company </p>: Hindustan Morning </div>
         </div>
         <div className='flex gap-5 text-[30px] mt-[50px] mb-[60px] justify-center items-center'>

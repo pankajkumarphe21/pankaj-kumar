@@ -51,7 +51,7 @@ const Education = () => {
     <div id='cu' className='bg-[#202020] max-sm:left-[25px] max-sm:mt-[800px] shadow-2xl mt-[35px] absolute left-[860px] h-[290px] rounded-[20px] p-8 w-[340px]'>
       <h1 className='text-3xl font-bold text-blue-500'>Bachelor of Technology</h1>
       <h2 className=' mt-[16px]'>Indian Institute of Technology, Varanasi</h2>
-      <h4 className='text-lg font-medium mt-[10px]'>CGPA :- 7.71</h4>
+      <h4 className='text-lg font-medium mt-[10px]'>CGPA :- 7.28</h4>
       <h4 className=' mt-[10px]'>Branch - Pharmaceutical Engineering and Technology</h4>
     </div>
   )
@@ -110,7 +110,7 @@ const Education = () => {
       </div>
       <div className="absolute ml-[495px] max-sm:ml-[250px]">
         <div className="flex flex-col items-center">
-        <p>Current</p>
+        <p className='w-[62px] flex justify-center'>{"  2025  "}</p>
         <div className='h-[68px] w-[2px] bg-white'></div>
         <div onMouseOut={()=>(setRender([general]))} onMouseOver={()=>{setRender([Current])}} className='h-[7px] w-[7px] bg-white mt-[5px] rounded-[50%]'></div>
         <div className='h-[68px] w-[2px] bg-white mt-[5px]'></div>

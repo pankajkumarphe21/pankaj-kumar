@@ -63,14 +63,14 @@ const Home = () => {
             <ul className="list-disc ml-[20px]">
               <li>
                 <span className="font-bold">Education</span>: B.Tech, IIT (BHU),
-                graduating in 2025, CGPA-7.33.
+                graduated in 2025, CGPA-7.28.
               </li>
               <li>
                 <span className="font-bold">Skills</span>: C, C++, JavaScript,
                 HTML, CSS, NodeJS, Express.JS, MongoDB, ReactJS, Git, more
               </li>
               <li>
-                <span className="font-bold">Projects</span>: See here
+                <span className="font-bold">Projects</span>: See <Link className="text-sm" to={'/projects'}>here</Link>
               </li>
               <li>
                 <span className="font-bold">Interests</span>: Full Stack
