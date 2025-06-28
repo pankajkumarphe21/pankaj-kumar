@@ -1,6 +1,5 @@
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
-import React from 'react'
 import { CgToolbox } from "react-icons/cg";
 
 const Element=()=>(

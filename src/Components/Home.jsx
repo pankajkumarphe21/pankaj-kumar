@@ -1,4 +1,3 @@
-import React from "react";
 import { IoMdCall } from "react-icons/io";
 import { MdCloudDownload } from "react-icons/md";
 import { HiOutlineDesktopComputer } from "react-icons/hi";
@@ -84,7 +83,7 @@ const Home = () => {
               </li>
               <li>
                 <span className="font-bold">Professional Experience</span>:
-                Currently Not Working, previously at Spirit.
+                Currently Working at Field Genie.
               </li>
               <li>Learn more about me by clicking here</li>
             </ul>
