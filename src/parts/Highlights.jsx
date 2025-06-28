@@ -8,7 +8,7 @@ import { updateIndex } from '../features/project/projectSlice'
 const Card=({projects,index})=>{
   const dispatch=useDispatch()
   return (
-    <div className='rounded-sm relative bg-no-repeat h-[246px] w-[376px]'>
+    <div className='rounded-sm hover:scale-102 relative bg-no-repeat h-[246px] w-[376px]'>
     <div className='absolute -z-10 top-0 bg-zinc-800 opacity-40 h-[246px] w-[376px] '>
       <img src={`${projects.image}`} alt="" />
     </div>
