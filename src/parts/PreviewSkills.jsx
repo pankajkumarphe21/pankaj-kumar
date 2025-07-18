@@ -6,7 +6,7 @@ const previewSkills = () => {
       {value}
     </div>
   )
-  const skills=['ReactJS','Node.js','Express.js','Mongoose','C++','C','JavaScript','Python','HTML','CSS','Excel','Github','Git','VSCode','Docker','Redis']
+  const skills=['ReactJS','Node.js','Express.js','Mongoose','C++','C','JavaScript','Python','HTML','CSS','Excel','Github','Git','VSCode','Docker','Redis','GraphQl','TypeScript']
   return (
     <div className='flex justify-center'>
       <div className='mt-[20px] w-[80%] flex flex-col justify-center items-center'>
