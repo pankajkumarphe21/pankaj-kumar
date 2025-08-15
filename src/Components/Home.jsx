@@ -84,7 +84,7 @@ const Home = () => {
                 <span className="font-bold">Professional Experience</span>:
                 Currently Working at Field Genie.
               </li>
-              <li>Learn more about me by clicking <Link className="text-sm" to={'/skills'}>here</Link></li>
+              <li>Learn more about me by clicking <Link className="text-sm" to={'/about'}>here</Link></li>
             </ul>
           </div>
         </div>
