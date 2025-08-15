@@ -67,7 +67,7 @@ const Home = () => {
               </li>
               <li>
                 <span className="font-bold">Skills</span>: C, C++, JavaScript,
-                HTML, CSS, NodeJS, Express.JS, MongoDB, ReactJS, Git, more
+                HTML, CSS, NodeJS, Express.JS, MongoDB, ReactJS, Git, <Link className="text-sm" to={'/skills'}>more</Link>
               </li>
               <li>
                 <span className="font-bold">Projects</span>: See <Link className="text-sm" to={'/projects'}>here</Link>
@@ -84,7 +84,7 @@ const Home = () => {
                 <span className="font-bold">Professional Experience</span>:
                 Currently Working at Field Genie.
               </li>
-              <li>Learn more about me by clicking here</li>
+              <li>Learn more about me by clicking <Link className="text-sm" to={'/skills'}>here</Link></li>
             </ul>
           </div>
         </div>
