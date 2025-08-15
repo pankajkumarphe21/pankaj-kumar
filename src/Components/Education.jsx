@@ -6,9 +6,9 @@ import styles from  './education.module.css'
 const Education = () => {
   useGSAP(()=>{
     gsap.from("#eduaction",{
-      opacity:0,
-      duration:1,
-      y:30
+      opacity:0.2,
+      duration:1.5,
+      y:10
     })
   })
   const High_School=()=>(

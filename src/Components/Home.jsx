@@ -12,8 +12,8 @@ const Home = () => {
   useGSAP(()=>{
     gsap.from(".home",{
       opacity:0,
-      duration:0.8,
-      y:50
+      duration:1.8,
+      y:3
     })
   })
   return (

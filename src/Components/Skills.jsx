@@ -85,8 +85,8 @@ const Skills = () => {
   useGSAP(()=>{
     gsap.from(".skills",{
       opacity:0,
-      y:50,
-      duration:0.8
+      y:20,
+      duration:1.9
     })
   })
   return (

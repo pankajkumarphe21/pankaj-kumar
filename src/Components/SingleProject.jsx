@@ -11,8 +11,7 @@ const SingleProject = () => {
   useGSAP(()=>{
     gsap.from('.project',{
       opacity:0,
-      duration:1.5,
-      y:30
+      duration:1.9,
     })
   })
   const index=useSelector(state=>state.index)

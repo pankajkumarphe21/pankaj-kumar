@@ -10,14 +10,14 @@ import gsap from 'gsap';
 const About = () => {
   useGSAP(()=>{
     gsap.from(".pic",{
-      opacity:0,
-      duration:1.2,
-      x:-100,
+      opacity:0.2,
+      duration:2.8,
+      x:-70,
     })
     gsap.from(".content",{
-      opacity:0,
-      duration:1.2,
-      y:50,
+      opacity:0.2,
+      duration:1.5,
+      y:20,
     })
   })
   return (
